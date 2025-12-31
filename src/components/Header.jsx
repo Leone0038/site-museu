@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <img
-        src="/assets/museum.jpeg"
+        src="/assets/museum.png"
         alt="Logo do museu"
         className="museum-logo"
         onClick={redirectToHome}

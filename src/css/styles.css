@@ -24,7 +24,7 @@
 }
 
 .app-container {
-  background-image: url("src/assets/background.jpeg");
+  background-image: url("public/assets/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,7 +64,7 @@
   }
 }
 .phone-numbers-page-container {
-  background-image: url("src/assets/background.jpeg");
+  background-image: url("public/assets/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

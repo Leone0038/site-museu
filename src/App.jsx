@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="app-container">
             <Header />
-            <div className="page-texts-container">
+            <div className="page-texts-container" style={{alignSelf: "start"}}>
                 <p className="page-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tenetur perspiciatis aliquam voluptatum eveniet vitae velit

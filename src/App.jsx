@@ -1,6 +1,6 @@
-import { useState } from "react";
 import "./css/styles.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -22,6 +22,7 @@ function App() {
                     harum in doloremque similique ea?
                 </p>
             </div>
+            <Footer />
         </div>
     );
 }

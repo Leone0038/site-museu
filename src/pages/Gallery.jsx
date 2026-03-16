@@ -17,6 +17,7 @@ export default function Gallery() {
                                 src="/assets/carousel-1.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -24,6 +25,7 @@ export default function Gallery() {
                                 src="/assets/carousel-2.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -31,6 +33,7 @@ export default function Gallery() {
                                 src="/assets/carousel-3.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -38,6 +41,7 @@ export default function Gallery() {
                                 src="/assets/carousel-4.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -45,6 +49,7 @@ export default function Gallery() {
                                 src="/assets/carousel-5.jpeg "
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -52,6 +57,7 @@ export default function Gallery() {
                                 src="/assets/carousel-6.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -59,6 +65,7 @@ export default function Gallery() {
                                 src="/assets/carousel-7.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -66,6 +73,7 @@ export default function Gallery() {
                                 src="/assets/carousel-8.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -73,6 +81,7 @@ export default function Gallery() {
                                 src="/assets/carousel-9.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                         <div class="carousel-item">
@@ -80,6 +89,7 @@ export default function Gallery() {
                                 src="/assets/carousel-10.jpeg"
                                 class="d-block w-100"
                                 alt="..."
+                                loading="lazy"
                             />
                         </div>
                     </div>

@@ -4,7 +4,7 @@
     align-items: center;
     padding: 2rem 3rem;
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: -2px 2px 4px rgb(76, 76, 76);
 
     gap: 2rem;
@@ -24,7 +24,7 @@
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 528px) {
     .header {
         justify-content: center;
     }

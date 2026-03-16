@@ -1,9 +1,9 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function PhoneNumbers() {
+export default function Contacts() {
     return (
-        <div className="app-container">
+        <div className="contacts-container">
             <Header />
             <div className="page-texts-container">
                 <p className="page-text">+55 9771073691</p>

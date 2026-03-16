@@ -16,7 +16,8 @@ export default function Header() {
       />
       <div className="links">
         <NavLink to="/sobre">Sobre</NavLink>
-        <NavLink to="/numeros">Telefones</NavLink>
+        <NavLink to="/contatos">Contate-nos</NavLink>
+        <NavLink to="/acervo">Acervo</NavLink>
       </div>
     </header>
   );

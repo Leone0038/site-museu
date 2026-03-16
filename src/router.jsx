@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import App from "./App";
-import PhoneNumbers from "./pages/PhoneNumbers";
+import Contacts from "./pages/Contacts";
+import Gallery from "./pages/Gallery";
 
 export const router = createBrowserRouter([
     {
@@ -13,7 +14,11 @@ export const router = createBrowserRouter([
         element: <AboutPage />,
     },
     {
-        path: "/numeros",
-        element: <PhoneNumbers />,
+        path: "/contatos",
+        element: <Contacts />,
+    },
+    {
+        path: "/acervo",
+        element: <Gallery />,
     },
 ]);

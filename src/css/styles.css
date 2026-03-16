@@ -61,6 +61,10 @@ h1 {
   box-shadow: -10px 10px 20px rgb(0, 0, 0) !important;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Gives a bit more clickable area without covering the art */
+}
+
 @media (max-width: 1024px) {
   .page-text {
     line-height: 1.6;

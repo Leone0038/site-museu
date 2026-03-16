@@ -3,10 +3,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Gallery() {
-    // State to track which image is being previewed
     const [selectedImg, setSelectedImg] = useState("");
 
-    // Array of your 10 images
     const images = Array.from(
         { length: 10 },
         (_, i) => `/assets/carousel-${i + 1}.jpeg`,
@@ -22,7 +20,8 @@ export default function Gallery() {
                     style={{
                         width: "80%",
                         margin: "0 auto",
-         
+                        position: "relative", // Ensures buttons anchor to this container
+                        zIndex: 1             // Establishes a clean stacking context
                     }}
                 >
                     <div className="carousel-inner">
@@ -35,11 +34,9 @@ export default function Gallery() {
                                     src={imgSrc}
                                     className="d-block w-100"
                                     alt={`Museum exhibit ${index + 1}`}
-                                    // Bootstrap Modal Triggers
                                     data-bs-toggle="modal"
                                     data-bs-target="#imageModal"
                                     onClick={() => setSelectedImg(imgSrc)}
-                                    // Natural height, but added pointer cursor for UX
                                     style={{ cursor: "zoom-in" }}
                                     loading={index === 0 ? "eager" : "lazy"}
                                 />
@@ -52,6 +49,7 @@ export default function Gallery() {
                         type="button"
                         data-bs-target="#carouselExample"
                         data-bs-slide="prev"
+                        style={{ zIndex: 10 }} // Explicitly lift above the images
                     >
                         <span
                             className="carousel-control-prev-icon"
@@ -64,6 +62,7 @@ export default function Gallery() {
                         type="button"
                         data-bs-target="#carouselExample"
                         data-bs-slide="next"
+                        style={{ zIndex: 10 }} // Explicitly lift above the images
                     >
                         <span
                             className="carousel-control-next-icon"
@@ -84,12 +83,14 @@ export default function Gallery() {
                 <div className="modal-dialog modal-dialog-centered modal-xl">
                     <div className="modal-content bg-transparent border-0">
                         <div className="modal-body p-0 text-center position-relative">
-                            <img
-                                src={selectedImg}
-                                className="img-fluid rounded shadow-lg"
-                                alt="Enlarged view"
-                                style={{ maxHeight: "95vh" }} // Prevents modal from being taller than the screen
-                            />
+                            {selectedImg && (
+                                <img
+                                    src={selectedImg}
+                                    className="img-fluid rounded shadow-lg"
+                                    alt="Enlarged view"
+                                    style={{ maxHeight: "95vh" }}
+                                />
+                            )}
                             <button
                                 type="button"
                                 className="btn-close btn-close-white position-absolute top-0 end-0 m-3"

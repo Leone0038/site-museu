@@ -1,124 +1,102 @@
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Gallery() {
+    // State to track which image is being previewed
+    const [selectedImg, setSelectedImg] = useState("");
+
+    // Array of your 10 images
+    const images = Array.from(
+        { length: 10 },
+        (_, i) => `/assets/carousel-${i + 1}.jpeg`,
+    );
+
     return (
         <div className="app-container">
             <Header />
             <div className="container-fluid p-5">
                 <div
                     id="carouselExample"
-                    class="carousel slide"
+                    className="carousel slide shadow-museum"
                     style={{ width: "80%", margin: "0 auto" }}
                 >
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="/assets/carousel-1.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-2.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-3.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-4.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-5.jpeg "
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-6.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-7.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-8.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-9.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/carousel-10.jpeg"
-                                class="d-block w-100"
-                                alt="..."
-                                loading="lazy"
-                            />
-                        </div>
+                    <div className="carousel-inner">
+                        {images.map((imgSrc, index) => (
+                            <div
+                                key={index}
+                                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                            >
+                                <img
+                                    src={imgSrc}
+                                    className="d-block w-100"
+                                    alt={`Museum exhibit ${index + 1}`}
+                                    // Bootstrap Modal Triggers
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#imageModal"
+                                    onClick={() => setSelectedImg(imgSrc)}
+                                    // Natural height, but added pointer cursor for UX
+                                    style={{ cursor: "zoom-in" }}
+                                    loading={index === 0 ? "eager" : "lazy"}
+                                />
+                            </div>
+                        ))}
                     </div>
+
                     <button
-                        class="carousel-control-prev"
+                        className="carousel-control-prev"
                         type="button"
                         data-bs-target="#carouselExample"
                         data-bs-slide="prev"
                     >
                         <span
-                            class="carousel-control-prev-icon"
+                            className="carousel-control-prev-icon"
                             aria-hidden="true"
                         ></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span className="visually-hidden">Previous</span>
                     </button>
                     <button
-                        class="carousel-control-next"
+                        className="carousel-control-next"
                         type="button"
                         data-bs-target="#carouselExample"
                         data-bs-slide="next"
                     >
                         <span
-                            class="carousel-control-next-icon"
+                            className="carousel-control-next-icon"
                             aria-hidden="true"
                         ></span>
-                        <span class="visually-hidden">Next</span>
+                        <span className="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
+
+            {/* --- BOOTSTRAP MODAL PREVIEW --- */}
+            <div
+                className="modal fade"
+                id="imageModal"
+                tabIndex="-1"
+                aria-hidden="true"
+            >
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0">
+                        <div className="modal-body p-0 text-center position-relative">
+                            <img
+                                src={selectedImg}
+                                className="img-fluid rounded shadow-lg"
+                                alt="Enlarged view"
+                                style={{ maxHeight: "95vh" }} // Prevents modal from being taller than the screen
+                            />
+                            <button
+                                type="button"
+                                className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <Footer />
         </div>
     );

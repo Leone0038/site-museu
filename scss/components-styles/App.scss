@@ -56,6 +56,10 @@ h1 {
     font-weight: bold;
 }
 
+.shadow-museum {
+    box-shadow: -5px 5px 5px rgb(44, 44, 44) !important;
+}
+
 @media (max-width: 1024px) {
     .page-text {
         line-height: 1.6;

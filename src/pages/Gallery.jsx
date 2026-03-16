@@ -19,7 +19,11 @@ export default function Gallery() {
                 <div
                     id="carouselExample"
                     className="carousel slide shadow-museum"
-                    style={{ width: "80%", margin: "0 auto" }}
+                    style={{
+                        width: "80%",
+                        margin: "0 auto",
+         
+                    }}
                 >
                     <div className="carousel-inner">
                         {images.map((imgSrc, index) => (

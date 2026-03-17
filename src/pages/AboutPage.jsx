@@ -4,7 +4,7 @@ import Header from "../components/Header";
 export default function AboutPage() {
     return (
         <div className="app-container about-container">
-            <Header />
+            <Header/>
             <div className="page-texts-container">
                 <p className="page-text">
                     <strong>Legado de Fé:</strong> Fundado em 1973, abriga mais

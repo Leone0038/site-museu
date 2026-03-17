@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 export default function AboutPage() {
     return (
-        <div className="about-container">
+        <div className="app-container about-container">
             <Header />
             <div className="page-texts-container">
                 <p className="page-text">

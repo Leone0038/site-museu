@@ -6,7 +6,6 @@
     color: black;
     background-color: whitesmoke;
     box-shadow: -2px 2px 4px rgb(76, 76, 76);
-
     gap: 2rem;
     flex-wrap: wrap;
     .museum-logo {
@@ -17,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         gap: 2rem;
+        flex-wrap: wrap;
         > * {
             text-decoration: none;
             color: black;
@@ -24,8 +24,12 @@
     }
 }
 
-@media (max-width: 528px) {
+@media (max-width: 660px) {
     .header {
         justify-content: center;
+        text-align: center;
+        .links {
+            justify-content: center;
+        }
     }
 }

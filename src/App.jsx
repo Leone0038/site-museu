@@ -7,7 +7,14 @@ function App() {
         <div className="app-container">
             <Header />
             <div className="video-container">
-                <video src="/assets/home-page-video.mp4" controls></video>
+                <video
+                    src="/assets/home-page-video.mp4"
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                ></video>
                 <div>
                     <h1>
                         Museu de Canindé:<br></br>A Renascença de um Legado

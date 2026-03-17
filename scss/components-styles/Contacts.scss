@@ -1,17 +1,9 @@
 .contacts-container {
-    background-image: url("/assets/contacts-page-landscape.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    justify-content: space-between;
+    background-image: url("/assets/contacts-page-landscape.webp");
 }
 
 @media (max-width: 1024px) {
     .contacts-container {
-        background-image: url("/assets/contacts-page-portrait.jpeg");
+        background-image: url("/assets/contacts-page-portrait.webp");
     }
 }

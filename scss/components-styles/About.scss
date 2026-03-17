@@ -1,18 +1,10 @@
 .about-container {
-    background-image: url("/assets/about-page-landscape.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    justify-content: space-between;
+    background-image: url("/assets/about-page-landscape.webp");
 }
 
 @media (max-width: 1024px) {
 
     .about-container {
-        background-image: url("/assets/about-page-portrait.jpeg");
+        background-image: url("/assets/about-page-portrait.webp");
     }
 }

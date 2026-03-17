@@ -7,7 +7,7 @@ export default function Gallery() {
 
     const images = Array.from(
         { length: 10 },
-        (_, i) => `/assets/carousel-${i + 1}.jpeg`,
+        (_, i) => `/assets/carousel-${i + 1}.webp`,
     );
 
     return (
@@ -18,7 +18,7 @@ export default function Gallery() {
                     id="carouselExample"
                     className="carousel slide shadow-museum"
                     style={{
-                        width: "80%",
+                        width: "100%",
                         margin: "0 auto",
                         position: "relative", // Ensures buttons anchor to this container
                         zIndex: 1             // Establishes a clean stacking context

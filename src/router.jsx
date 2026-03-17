@@ -3,6 +3,7 @@ import AboutPage from "./pages/AboutPage";
 import App from "./App";
 import Contacts from "./pages/Contacts";
 import Gallery from "./pages/Gallery";
+import News from "./pages/News";
 
 export const router = createBrowserRouter([
     {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
     {
         path: "/acervo",
         element: <Gallery />,
+    },
+    {
+        path: "/noticias",
+        element: <News />,
     },
 ]);

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 export default function Contacts() {
     return (
-        <div className="contacts-container">
+        <div className="app-container contacts-container">
             <Header />
             <div className="page-texts-container">
                 <p className="page-text">+55 9771073691</p>

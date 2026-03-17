@@ -4,5 +4,10 @@
     text-align: center;
     padding: 3rem;
     box-shadow: 2px -2px 4px rgb(76, 76, 76);
+}
 
+@media (max-width: 420px) {
+    .footer {
+        text-align: center;
+    }
 }

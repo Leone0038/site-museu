@@ -11,7 +11,7 @@
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 50%;
     gap: 5rem;
     padding: 0 3rem 5rem 3rem;
     > * {
@@ -19,6 +19,7 @@
     }
     video {
         box-shadow: -2px 2px 4px black;
+        border-radius: 10px;
     }
 }
 
@@ -66,10 +67,15 @@ h1 {
     .app-container {
         background-image: url("/assets/home-page-portrait.webp");
     }
+  
 }
-
-@media (max-width: 1600px) {
-    .video-container {
+@media (max-width: 768px) {
+      .video-container {
+        width: 80%;
+    }
+}
+@media (max-width: 425px) {
+      .video-container {
         width: 100%;
     }
 }

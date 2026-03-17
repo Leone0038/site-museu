@@ -21,7 +21,7 @@ export default function Gallery() {
                         width: "100%",
                         margin: "0 auto",
                         position: "relative", // Ensures buttons anchor to this container
-                        zIndex: 1             // Establishes a clean stacking context
+                        zIndex: 1, // Establishes a clean stacking context
                     }}
                 >
                     <div className="carousel-inner">
@@ -101,7 +101,6 @@ export default function Gallery() {
                     </div>
                 </div>
             </div>
-
             <Footer />
         </div>
     );

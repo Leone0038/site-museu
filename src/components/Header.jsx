@@ -13,6 +13,8 @@ export default function Header() {
                 className="museum-logo"
                 onClick={redirectToHome}
                 width={100}
+                loading="eager"
+                fetchpriority="high"
             />
             <div className="links">
                 <NavLink to="/sobre">Sobre</NavLink>

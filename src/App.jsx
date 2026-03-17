@@ -8,7 +8,7 @@ function App() {
             <Header />
             <div className="video-container">
                 <video
-                    src="/assets/home-page-video.mp4"
+                    src="/assets/museum-video.webm"
                     controls
                     autoPlay
                     muted

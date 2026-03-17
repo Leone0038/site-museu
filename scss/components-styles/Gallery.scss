@@ -9,3 +9,13 @@
     width: 3rem; /* Makes the icon slightly larger */
     height: 3rem;
 }
+
+#museumCarousel {
+    width: 80% !important;
+}
+
+@media (max-width: 768px) {
+      #museumCarousel {
+        width: 100% !important;
+    }
+}

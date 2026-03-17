@@ -15,7 +15,7 @@ export default function Gallery() {
             <Header />
             <div className="container-fluid p-5">
                 <div
-                    id="carouselExample"
+                    id="museumCarousel"
                     className="carousel slide shadow-museum"
                     style={{
                         width: "100%",
@@ -47,7 +47,7 @@ export default function Gallery() {
                     <button
                         className="carousel-control-prev"
                         type="button"
-                        data-bs-target="#carouselExample"
+                        data-bs-target="#museumCarousel"
                         data-bs-slide="prev"
                         style={{ zIndex: 10 }} // Explicitly lift above the images
                     >
@@ -60,7 +60,7 @@ export default function Gallery() {
                     <button
                         className="carousel-control-next"
                         type="button"
-                        data-bs-target="#carouselExample"
+                        data-bs-target="#museumCarousel"
                         data-bs-slide="next"
                         style={{ zIndex: 10 }} // Explicitly lift above the images
                     >

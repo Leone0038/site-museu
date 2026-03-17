@@ -20,7 +20,6 @@ function App() {
                     <h1>
                         Museu de Canindé:<br></br>A Renascença de um Legado
                     </h1>
-
                     <h2>
                         Um plano estratégico para garantir a sustentabilidade e
                         relevância de um patrimônio de fé e memória.

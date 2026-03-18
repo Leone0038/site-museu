@@ -94,6 +94,10 @@ h1 {
   top: 0;
   z-index: 1;
 }
+.header .logo-container {
+  width: 100px;
+  height: 100px;
+}
 .header .museum-logo {
   cursor: pointer;
 }

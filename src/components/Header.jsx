@@ -7,15 +7,17 @@ export default function Header() {
     }
     return (
         <header className="header">
-            <img
-                src="/assets/museum-logo.svg"
-                alt="Logo do museu"
-                className="museum-logo"
-                onClick={redirectToHome}
-                width={100}
-                loading="eager"
-                fetchPriority="high"
-            />
+            <div className="logo-container">
+                <img
+                    src="/assets/museum-logo.svg"
+                    alt="Logo do museu"
+                    className="museum-logo"
+                    onClick={redirectToHome}
+                    width={100}
+                    loading="eager"
+                    fetchPriority="high"
+                />
+            </div>
             <div className="links">
                 <NavLink to="/sobre">Sobre</NavLink>
                 <NavLink to="/contatos">Contate-nos</NavLink>

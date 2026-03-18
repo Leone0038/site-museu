@@ -43,13 +43,9 @@ export default function Gallery() {
                                     data-bs-toggle="modal"
                                     data-bs-target="#imageModal"
                                     onClick={() => setSelectedImg(imgSrc)}
-                                    style={{
-                                        cursor: "zoom-in",
-                                        display: isLoaded ? "block" : "none",
-                                    }}
+                                    style={{ cursor: "zoom-in" }}
                                     loading={index === 0 ? "eager" : "lazy"}
                                 />
-                                {!isLoaded && <img src="/assets/loading.gif" alt="Loading..." loading="eager" width={100}/>}
                             </div>
                         ))}
                     </div>

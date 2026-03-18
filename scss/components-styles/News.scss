@@ -1,0 +1,9 @@
+.news-container {
+    background-image: url("/assets/news-page-landscape.webp");
+}
+
+@media (max-width: 1024px) {
+    .news-container {
+        background-image: url("/assets/news-page-portrait.webp");
+    }
+}

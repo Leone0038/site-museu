@@ -11,7 +11,6 @@ export default function Logo() {
                 alt="Logo do museu"
                 className="museum-logo"
                 onClick={redirectToHome}
-                width={100}
                 loading="eager"
                 fetchPriority="high"
             />

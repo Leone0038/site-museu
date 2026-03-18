@@ -11,23 +11,28 @@ export default function Gallery() {
     );
 
     return (
-        <div className="app-container">
+        <div className="app-container" style={{minHeight: "150vh"}}>
             <Header />
             <div className="container-fluid p-5">
                 <div
                     id="museumCarousel"
-                    className="carousel slide shadow-museum"
+                    className="carousel slide"
                     style={{
                         width: "100%",
                         margin: "0 auto",
                     }}
                 >
-                    <div className="carousel-inner">
+                    <div
+                        className="carousel-inner shadow-museum"
+                        style={{
+                            backgroundColor: "grey",
+                            borderRadius: "10px",
+                        }}
+                    >
                         {images.map((imgSrc, index) => (
                             <div
                                 key={index}
                                 className={`carousel-item ${index === 0 ? "active" : ""}`}
-                                style={{ backgroundColor: "#444444" }}
                             >
                                 <img
                                     src={imgSrc}

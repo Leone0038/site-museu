@@ -12,7 +12,7 @@ export default function Gallery() {
     );
 
     return (
-        <div className="app-container" style={{ minHeight: "150vh" }}>
+        <div className="app-container">
             <Header />
             <div className="container-fluid p-5">
                 <div
@@ -39,13 +39,26 @@ export default function Gallery() {
                                     src={imgSrc}
                                     onLoad={() => setIsLoaded(true)}
                                     className="d-block w-100"
-                                    alt={`Museum exhibit ${index + 1}`}
+                                    alt={`Exibição do Museu ${index + 1}`}
                                     data-bs-toggle="modal"
                                     data-bs-target="#imageModal"
                                     onClick={() => setSelectedImg(imgSrc)}
-                                    style={{ cursor: "zoom-in" }}
+                                    style={{
+                                        cursor: "zoom-in",
+                                        display: isLoaded ? "block" : "none",
+                                    }}
                                     loading={index === 0 ? "eager" : "lazy"}
                                 />
+
+                                {!isLoaded && (
+                                    <img
+                                        src="/assets/loading.gif"
+                                        alt="Loading..."
+                                        loading="eager"
+                                        width={100}
+                                        className="loading-gif"
+                                    />
+                                )}
                             </div>
                         ))}
                     </div>

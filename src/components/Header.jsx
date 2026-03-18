@@ -1,4 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Header() {
     const navigate = useNavigate();
@@ -7,17 +8,7 @@ export default function Header() {
     }
     return (
         <header className="header">
-            <div className="logo-container">
-                <img
-                    src="/assets/museum-logo.svg"
-                    alt="Logo do museu"
-                    className="museum-logo"
-                    onClick={redirectToHome}
-                    width={100}
-                    loading="eager"
-                    fetchPriority="high"
-                />
-            </div>
+            <Logo/>
             <div className="links">
                 <NavLink to="/sobre">Sobre</NavLink>
                 <NavLink to="/contatos">Contate-nos</NavLink>

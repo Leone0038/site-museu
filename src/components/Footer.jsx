@@ -1,21 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Footer() {
-    const navigate = useNavigate();
-    function redirectToHome() {
-        navigate("/");
-    }
     return (
         <footer className="footer">
-            <img
-                src="/assets/museum-logo.svg"
-                alt="Logo do museu"
-                className="museum-logo"
-                onClick={redirectToHome}
-                width={100}
-                loading="eager"
-                fetchpriority="high"
-            />
+            <Logo />
             <p className="year">
                 © {new Date().getFullYear()} Museu Regional de Canindé
             </p>

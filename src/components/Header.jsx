@@ -14,7 +14,7 @@ export default function Header() {
                 onClick={redirectToHome}
                 width={100}
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
             />
             <div className="links">
                 <NavLink to="/sobre">Sobre</NavLink>

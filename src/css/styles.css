@@ -86,7 +86,7 @@ h1 {
   align-items: center;
   padding: 2rem 3rem;
   color: black;
-  background-color: rgba(255, 255, 255, 0.653);
+  background-color: rgba(255, 255, 255, 0.758);
   box-shadow: -2px 2px 4px rgb(76, 76, 76);
   gap: 2rem;
   flex-wrap: wrap;
@@ -117,7 +117,7 @@ h1 {
   }
 }
 .footer {
-  background-color: rgba(128, 128, 128, 0.706);
+  background-color: rgba(128, 128, 128, 0.778);
   color: whitesmoke;
   text-align: center;
   padding: 1rem;
@@ -165,6 +165,15 @@ h1 {
 @media (max-width: 768px) {
   #museumCarousel {
     width: 100% !important;
+  }
+}
+.news-container {
+  background-image: url("/assets/news-page-landscape.webp");
+}
+
+@media (max-width: 1024px) {
+  .news-container {
+    background-image: url("/assets/news-page-portrait.webp");
   }
 }
 

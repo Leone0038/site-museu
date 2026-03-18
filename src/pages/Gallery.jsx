@@ -4,6 +4,7 @@ import Header from "../components/Header";
 
 export default function Gallery() {
     const [selectedImg, setSelectedImg] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
     const images = Array.from(
         { length: 10 },
@@ -11,7 +12,7 @@ export default function Gallery() {
     );
 
     return (
-        <div className="app-container" style={{minHeight: "150vh"}}>
+        <div className="app-container" style={{ minHeight: "150vh" }}>
             <Header />
             <div className="container-fluid p-5">
                 <div
@@ -36,14 +37,19 @@ export default function Gallery() {
                             >
                                 <img
                                     src={imgSrc}
+                                    onLoad={() => setIsLoaded(true)}
                                     className="d-block w-100"
                                     alt={`Museum exhibit ${index + 1}`}
                                     data-bs-toggle="modal"
                                     data-bs-target="#imageModal"
                                     onClick={() => setSelectedImg(imgSrc)}
-                                    style={{ cursor: "zoom-in" }} // Add background for better visibility
+                                    style={{
+                                        cursor: "zoom-in",
+                                        display: isLoaded ? "block" : "none",
+                                    }}
                                     loading={index === 0 ? "eager" : "lazy"}
                                 />
+                                {!isLoaded && <img src="/assets/loading.gif" alt="Loading..." loading="eager" width={100}/>}
                             </div>
                         ))}
                     </div>

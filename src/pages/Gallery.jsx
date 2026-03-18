@@ -20,8 +20,6 @@ export default function Gallery() {
                     style={{
                         width: "100%",
                         margin: "0 auto",
-                        position: "relative", // Ensures buttons anchor to this container
-                        zIndex: 1, // Establishes a clean stacking context
                     }}
                 >
                     <div className="carousel-inner">

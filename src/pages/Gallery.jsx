@@ -8,7 +8,7 @@ export default function Gallery() {
 
     const images = Array.from(
         { length: 10 },
-        (_, i) => `/assets/carousel-${i + 1}.webp`,
+        (_, i) => `/assets/carousel/carousel-${i + 1}.webp`,
     );
 
     return (

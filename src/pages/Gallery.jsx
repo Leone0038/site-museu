@@ -27,6 +27,7 @@ export default function Gallery() {
                             <div
                                 key={index}
                                 className={`carousel-item ${index === 0 ? "active" : ""}`}
+                                style={{ backgroundColor: "#444444" }}
                             >
                                 <img
                                     src={imgSrc}
@@ -35,7 +36,7 @@ export default function Gallery() {
                                     data-bs-toggle="modal"
                                     data-bs-target="#imageModal"
                                     onClick={() => setSelectedImg(imgSrc)}
-                                    style={{ cursor: "zoom-in" , backgroundColor: "#444444"}} // Add background for better visibility
+                                    style={{ cursor: "zoom-in" }} // Add background for better visibility
                                     loading={index === 0 ? "eager" : "lazy"}
                                 />
                             </div>

@@ -16,9 +16,10 @@ function App() {
                     playsInline
                 ></video>
                 <div>
-                    <h1>
-                        Museu de Canindé:<br></br>A Renascença de um Legado
+                    <h1 style={{whiteSpace: 'nowrap'}}>
+                        Museu de Canindé:
                     </h1>
+                    <h1>A Renascença de um Legado</h1>
                     <h2>
                         Um plano estratégico para garantir a sustentabilidade e
                         relevância de um patrimônio de fé e memória.

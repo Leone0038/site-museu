@@ -14,6 +14,8 @@ function App() {
                     muted
                     loop
                     playsInline
+                    poster="/assets/museum-video-poster.webp"
+                    preload="metadata"
                 ></video>
                 <div>
                     <h1 style={{whiteSpace: 'nowrap'}}>

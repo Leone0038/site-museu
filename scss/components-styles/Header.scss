@@ -8,9 +8,10 @@
     box-shadow: -2px 2px 4px rgb(76, 76, 76);
     gap: 2rem;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
     .museum-logo {
         cursor: pointer;
-
     }
     .links {
         display: flex;

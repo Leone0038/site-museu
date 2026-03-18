@@ -84,11 +84,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   color: black;
   background-color: rgba(255, 255, 255, 0.758);
   box-shadow: -2px 2px 4px rgb(76, 76, 76);
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 .header .links {

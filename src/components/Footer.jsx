@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="footer">
             <Logo />
             <p className="year">
-                © {new Date().getFullYear()} Museu Regional de Canindé
+                {new Date().getFullYear()} © Museu Regional de Canindé
             </p>
         </footer>
     );

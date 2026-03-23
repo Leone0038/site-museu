@@ -68,7 +68,7 @@ export default function Gallery() {
                         type="button"
                         data-bs-target="#museumCarousel"
                         data-bs-slide="prev"
-                        style={{ zIndex: 10 }} // Explicitly lift above the images
+                        style={{ zIndex: 10 }}
                     >
                         <span
                             className="carousel-control-prev-icon"
@@ -81,7 +81,7 @@ export default function Gallery() {
                         type="button"
                         data-bs-target="#museumCarousel"
                         data-bs-slide="next"
-                        style={{ zIndex: 10 }} // Explicitly lift above the images
+                        style={{ zIndex: 10 }}
                     >
                         <span
                             className="carousel-control-next-icon"
@@ -91,8 +91,6 @@ export default function Gallery() {
                     </button>
                 </div>
             </div>
-
-            {/* --- BOOTSTRAP MODAL PREVIEW --- */}
             <div
                 className="modal fade"
                 id="imageModal"

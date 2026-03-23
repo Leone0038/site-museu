@@ -17,10 +17,8 @@ function App() {
                     poster="/assets/museum-video-poster.webp"
                     preload="metadata"
                 ></video>
-                <div>
-                    <h1 style={{whiteSpace: 'nowrap'}}>
-                        Museu de Canindé:
-                    </h1>
+                <div className="page-text">
+                    <h1 style={{ whiteSpace: "nowrap" }}>Museu de Canindé:</h1>
                     <h1>A Renascença de um Legado</h1>
                     <h2>
                         Um plano estratégico para garantir a sustentabilidade e
